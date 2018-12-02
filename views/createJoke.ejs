@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Joke</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h3><a href="/jokes">Joke List</a></h3>
+      <h1>Create New Joke</h1>
+      <form action="/jokes/save" method="post">
+        <table>
+          
+            <div class="form-field">
+              <label for="number">number</label>
+              <input class="number" id="number" name="number"  />
+            </div>
+            <div class="form-field">
+              <label for="joke">joke</label>
+              <textarea class="input" id="joke" name="joke" ></textarea>
+              
+            </div>
+            
+              <td colspan="2"><input type="submit" value="Save" /></td>
+            
+          
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
