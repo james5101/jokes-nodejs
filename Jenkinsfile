@@ -1,5 +1,7 @@
 pipeline{
-  agent {}
+  agent {
+    label 'any'
+  }
   stages {
     stage('jslint'){
       steps {
