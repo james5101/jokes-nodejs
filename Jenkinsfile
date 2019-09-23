@@ -3,7 +3,9 @@ pipeline{
   stages {
     stage('jslint'){
       steps {
-        sh 'jslint'
+        JSLint{
+          includePattern('**/*.js')
+        }
       }
     }
   }
